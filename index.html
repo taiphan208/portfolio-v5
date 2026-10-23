@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio V5 - Phan Anh Tài | Lập Trình Viên Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#about" class="logo">PAT.Dev</a>
+            <nav class="menu">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#roadmap">Lộ trình</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. GIỚI THIỆU -->
+        <section id="about" class="section hero">
+            <div class="hero-content">
+                <h1>Xin chào, tôi là Phan Anh Tài</h1>
+                <p class="subtitle">Mã sinh viên: 2071020166 - Sinh viên CNTT chuyên ngành Kỹ thuật Phần mềm. Đam mê phát triển ứng dụng Web chuẩn Accessibility & Responsive.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="button primary-btn">Liên hệ làm việc</a>
+                    <a href="#projects" class="button secondary-btn">Xem dự án</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. KỸ NĂNG -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Bố cục chuẩn Semantic, Flexbox, Grid, CSS Variable, Accessibility (WCAG).</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Xử lý bất đồng bộ, DOM manipulation, ES Modules, RESTful API consumption.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Responsive Design</h3>
+                    <p>Thiết kế Mobile-first, tối ưu hóa hiển thị từ 320px đến Desktop 4K.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git & Workflow</h3>
+                    <p>Quản lý mã nguồn Git/GitHub, CI/CD cơ bản và quy chuẩn Clean Code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DỰ ÁN -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+            <div class="grid">
+                <article class="card project-card">
+                    <h3>Hệ Thống Quản Lý Học Tập</h3>
+                    <p>Nền tảng hỗ trợ sinh viên nộp bài tập và theo dõi tiến độ học tập trực tuyến.</p>
+                    <a href="#projects" class="card-link">Chi tiết dự án &rarr;</a>
+                </article>
+                <article class="card project-card">
+                    <h3>Website Thương Mại Điện Tử</h3>
+                    <p>Giao diện cửa hàng công nghệ tích hợp giỏ hàng và tra cứu sản phẩm thông minh.</p>
+                    <a href="#projects" class="card-link">Chi tiết dự án &rarr;</a>
+                </article>
+                <article class="card project-card">
+                    <h3>Ứng Dụng Đọc Tin Tức</h3>
+                    <p>Trang tin tức responsive kết hợp giao diện Tối/Sáng tự động thích ứng thiết bị.</p>
+                    <a href="#projects" class="card-link">Chi tiết dự án &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. LỘ TRÌNH HỌC TẬP -->
+        <section id="roadmap" class="section">
+            <h2 class="section-title">Lộ Trình Phát Triển</h2>
+            <ol class="roadmap-list">
+                <li class="roadmap-item">
+                    <h4>Giai đoạn 1: Nền tảng Frontend (Năm 1 - 2)</h4>
+                    <p>Thành thạo HTML5, CSS3, JS, CSS Architecture, Responsive Design.</p>
+                </li>
+                <li class="roadmap-item">
+                    <h4>Giai đoạn 2: Framework & Tooling (Năm 3)</h4>
+                    <p>Nghiên cứu React.js, TypeScript, Next.js và TailwindCSS.</p>
+                </li>
+                <li class="roadmap-item">
+                    <h4>Giai đoạn 3: Backend & System Design (Năm 4)</h4>
+                    <p>Xây dựng RESTful API với Node.js, Express, MongoDB & PostgreSQL.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- 5. LIÊN HỆ -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Gửi Tin Nhắn Liên Hệ</h2>
+            <form action="ket-qua.html" method="get" class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên <span class="required">*</span>:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Ví dụ: Phan Anh Tài">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Địa chỉ Email <span class="required">*</span>:</label>
+                    <input type="email" id="email" name="email" required placeholder="tai.phan@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nội dung trao đổi <span class="required">*</span>:</label>
+                    <p id="message-help" class="help-text">Nội dung tối thiểu 10 ký tự và không vượt quá 500 ký tự.</p>
+                    <textarea id="message" name="message" required minlength="10" maxlength="500" aria-describedby="message-help" rows="5" placeholder="Nhập lời nhắn của bạn..."></textarea>
+                </div>
+
+                <button type="submit" class="button primary-btn full-width">Gửi Đi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Phan Anh Tài (MSV: 2071020166) - Portfolio V5 (FIT4014 - Buổi 5)</p>
+    </footer>
+</body>
+</html>
